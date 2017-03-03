@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "cross-env BABEL_ENV=node mocha --recursive --compilers js:babel-register --require ignore-styles --require ./test/setup.js",
+    "test": "cross-env BABEL_ENV=node mocha --recursive --compilers js:babel-register --require ./test/setup.js",
     "test:watch": "npm test -- --watch"
   },
   "author": "Zach Pflederer",

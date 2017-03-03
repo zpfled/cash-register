@@ -50,8 +50,8 @@ class Drawer {
 }
 
 export default class CashRegister {
-  constructor() {
-    this.drawer = new Drawer;
+  constructor(cash={}) {
+    this.drawer = new Drawer(cash);
   }
 
   add = (cash) => this.setDrawer(new Drawer(this.getDrawer().add(cash)));
