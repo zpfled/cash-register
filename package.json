@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "cross-env BABEL_ENV=node mocha --recursive --compilers js:babel-register --require ./test/setup.js",
+    "test": "cross-env BABEL_ENV=node mocha --recursive --compilers js:babel-register --require ignore-styles --require ./test/setup.js",
     "test:watch": "npm test -- --watch"
   },
   "author": "Zach Pflederer",
@@ -22,6 +22,8 @@
     "babel-register": "^6.23.0",
     "cross-env": "^3.1.4",
     "expect": "^1.20.2",
+    "flow-bin": "^0.40.0",
+    "ignore-styles": "^5.0.1",
     "mocha": "^3.2.0",
     "underscore": "^1.8.3",
     "webpack": "^2.2.1"
